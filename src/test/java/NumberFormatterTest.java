@@ -7,12 +7,12 @@ class NumberFormatterTest {
 
     @Test
     void numberFormatTranslatorMethod1() {
-        assertEquals(13, NumberFormatter.parseInt("12") +1);
+        assertEquals(13, NumberFormatter.parseInt("12") + 1);
     }
 
     @Test
     void numberFormatTranslatorMethod2() {
-        assertEquals(-11, NumberFormatter.parseInt("-10") -1);
+        assertEquals(-11, NumberFormatter.parseInt("-10") - 1);
     }
 
     @Test
@@ -22,11 +22,16 @@ class NumberFormatterTest {
 
     @Test
     void numberFormatTranslatorMethod4() {
-        assertEquals(6, NumberFormatter.parseInt("12") /2);
+        assertEquals(6, NumberFormatter.parseInt("12") / 2);
     }
 
     @Test
     void numberFormatTranslatorMethod5() {
         assertEquals(-24, NumberFormatter.parseInt("-12") * 2);
+    }
+
+    @Test
+    void testCycleMethod() {
+        assertEquals(15, NumberFormatter.methodForCycle("+15"));
     }
 }
