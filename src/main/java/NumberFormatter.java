@@ -28,7 +28,7 @@ public class NumberFormatter {
         String stringWithoutSign = str.substring(1);
         char[] arrayOfStr = stringWithoutSign.toCharArray();
         int result = 0;
-        int firstNumberInAscii    = '0';
+        int firstNumberInAscii = '0';
         for (char c : arrayOfStr) {
             result = (result * 10) + ((int) c - firstNumberInAscii);
         }
